@@ -1,0 +1,13 @@
+.center{
+    display:flex;
+    justify-content: center;
+}
+.form{
+    width:70%;
+   background-color: transparent;
+}
+.backg{
+    background: linear-gradient(270deg, rgb(34, 34, 34) 0px, rgb(92, 91, 91));
+
+    margin:7px;
+}

@@ -1,0 +1,5 @@
+.sign{
+    background: linear-gradient(270deg, rgb(59, 58, 58) 0px, rgb(0, 0, 0));
+    border: black solid;
+    border-width: 0px 5px 5px 0px;
+  }
