@@ -11,3 +11,11 @@
 
     margin:7px;
 }
+.detect{
+    padding:2%;
+    margin:1%;
+    border-radius: 15px;
+    background: linear-gradient(270deg, rgb(34, 34, 34) 0px, rgb(92, 91, 91));
+    color:white;
+    font-weight: bolder;   
+}

@@ -1,20 +1,39 @@
 import React from 'react';
-
+import './Navigation.css';
 const Navigation = ({onRouteChange,route}) =>{
     if(route==='signout')
     return(
-        <nav style={{display:'flex',justifyContent:'flex-end'}}>
-                <p onClick={ () => onRouteChange('signin')}><a className='f4 pointer pa3 dim black grow underline link m1 tc white' ><b>Sign Out</b></a></p>
-                    <p><a href='https://pulkithb.github.io' className='f4 pointer pa3 dim black grow underline link m1 tc white'><b>My Website</b></a></p>
+        <div>
+        <nav className='bar '>
+        <a className='but shadow-5 link pointer dim grow dib br3 ma2 tc' href='https://pulkithb.github.io'>My Website</a>
+            <a onClick={ () => onRouteChange('signin')} className='but shadow-5 link pointer dim grow dib br3 ma2 tc' >Sign Out</a>
+            
         </nav>
+        <span className='bar1 '>
+        <a className='but1 shadow-5 link pointer dim grow dib br3 ma2 tc' href='https://pulkithb.github.io'>My Website</a>
+            <a  onClick={ () => onRouteChange('signin')} className='but1 shadow-5 link pointer dim grow dib br3 ma2 tc'>Sign Out</a>
+            
+        </span>
+    </div>
     );
     else
     return(    
-                <nav style={{display:'flex',justifyContent:'flex-end'}}>
-                    <p onClick={ () => onRouteChange('signin')}><a className='f4 pointer pa3 dim black grow underline link m1 tc white' ><b>Sign In</b></a></p>
-                    <p onClick={ () => onRouteChange('register')}><a className='f4 pointer pa3 dim black grow underline link m1 tc white' ><b>Register</b></a></p>
-                    <p><a href='https://pulkithb.github.io' className='f4 pointer pa3 dim black grow underline link m1 tc white'><b>My Website</b></a></p>
+                <div>
+                <nav className='bar '>
+                <a className='but shadow-5 link pointer dim grow dib br3 ma2 tc' href='https://pulkithb.github.io'>My Website</a>
+                <a onClick={ () => onRouteChange('register')} className='but shadow-5 link pointer dim grow dib br3 ma2 tc' >Register</a>
+                <a onClick={ () => onRouteChange('signin')} className='but shadow-5 link pointer dim grow dib br3 ma2 tc' >Sign In</a>
+                    
+                    
                 </nav>
+                <span className='bar1 '>
+                <a className='but1 shadow-5 link pointer dim grow dib br3 ma2 tc' href='https://pulkithb.github.io'>My Website</a>
+                <a  onClick={ () => onRouteChange('register')} className='but1 shadow-5 link pointer dim grow dib br3 ma2 tc'>Register</a>
+                <a onClick={ () => onRouteChange('signin')} className='but shadow-5 link pointer dim grow dib br3 ma2 tc' >Sign In</a>
+                    
+                    
+                </span>
+            </div>
     );
 }
 

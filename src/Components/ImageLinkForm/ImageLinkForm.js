@@ -7,7 +7,7 @@ const ImageLinkForm = ({onchange,onclickdetect}) =>{
             <div className='center '>
                 <div className='br3 shadow-5 pa3 form center'>
                 <input className='f4 pa2 ma2 w-70 center' type='tex' onChange={onchange} />
-                <button className='w-30 pointer f4 pa2  grow backg ph3 pv2 dib washed-yellow shadow-5 link br3 tc dim' onClick={onclickdetect}><b>Detect</b></button>
+                <button className='dim grow detect tc' onClick={onclickdetect}>Detect</button>
                 </div>
             </div>
         </div>
